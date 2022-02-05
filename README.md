@@ -1,16 +1,18 @@
-### Hi there 👋
-
+### 你好
+- 🔭 I’m currently working on nothing 😆
+- 🌱 我正在学习制作编程语言
 <!--
-**S-L-I-G-H-T-N-I-N-G/S-L-I-G-H-T-N-I-N-G** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
-- 📫 How to reach me: ...
+-->
+- 📫 如何联系我：
+  - <img src="https://im.qq.com/favicon.ico" height="16px"> QQ：3157420882
+  - <img src="https://img0.baidu.com/it/u=373304636,3855678211&fm=253&fmt=auto&app=138&f=JPEG?w=32&h=32" height="16px"> 微信：SLIGHTNINGSLIGHTNING
+  - <img src="https://github.com/favicon.ico" height="16px"> github：https://github.com/S-L-I-G-H-T-N-I-N-G/
+  - <img src="https://gitee.com/favicon.ico" height="16px"> gitee：https://gitee.com/slightning
+  - <img src="https://shequ.codemao.cn/favicon.ico" height="16px"> 编程猫：https://shequ.codemao.cn/user/6519713
+<!--
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
