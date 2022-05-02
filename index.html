@@ -2,11 +2,54 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>SLIGHTNING</title>
+		<title>SLIGHTNING 的主页</title>
 		<link rel="shortcut icon" href="src/icon.png">
+		<style>
+			* {
+				transition: all 0.5s;
+			}
+			body {
+				margin: 0rem;
+				background: #00CCFF;
+			}
+			#card {
+				margin: 10vw;
+				background: #FFF;
+				box-shadow: 0rem 0rem 1rem #888;
+				border-radius: 1rem;
+			}
+			#info {
+				text-align: center;
+			}
+			#avatar {
+				width: 8rem;
+				margin: 1rem;
+				border-radius: 0.5rem;
+			}
+			#name {
+				margin: 0rem;
+				font-size: 12vw;
+			}
+			@media only screen and (min-width: 512px) {
+				#info {
+					display: flex;
+				}
+				#avatar {
+					width: 4rem;
+				}
+				#name {
+					font-size: 3rem;
+					margin: 1rem 0rem;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div id="card">
+			<div id="info">
+				<img id="avatar" src="src/SLIGHTNING/avatar.png" alt="">
+				<h1 id="name">SLIGHTNING</h1>
+			</div>
 		</div>
 	</body>
 </html>
