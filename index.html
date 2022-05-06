@@ -4,42 +4,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>SLIGHTNING 的主页</title>
 		<link rel="shortcut icon" href="src/icon.png">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="css/info.css">
+		<link rel="stylesheet" href="css/nav-bar.css">
+		<link rel="stylesheet" href="css/content.css">
+		<link rel="stylesheet" href="css/hover-window.css">
+		<script src="js/hover-window.js"></script>
 		<style>
 			* {
 				transition: all 0.5s;
+				color: #00CCFF;
 			}
 			body {
 				margin: 0rem;
 				background: #00CCFF;
 			}
+			a {
+				text-decoration: none;
+				-webkit-tap-highlight-color: #00000000;
+			}
 			#card {
 				margin: 10vw;
+				padding-bottom: 1rem;
 				background: #FFF;
 				box-shadow: 0rem 0rem 1rem #888;
 				border-radius: 1rem;
 			}
-			#info {
-				text-align: center;
-			}
-			#avatar {
-				width: 8rem;
-				margin: 1rem;
-				border-radius: 0.5rem;
-			}
-			#name {
-				margin: 0rem;
-				font-size: 12vw;
-			}
 			@media only screen and (min-width: 512px) {
-				#info {
+				#a {
 					display: flex;
-				}
-				#avatar {
-					width: 4rem;
-				}
-				#name {
-					font-size: 3rem;
-					margin: 1rem 0rem;
 				}
 			}
 		</style>
@@ -49,6 +42,70 @@
 			<div id="info">
 				<img id="avatar" src="src/SLIGHTNING/avatar.png" alt="">
 				<h1 id="name">SLIGHTNING</h1>
+			</div>
+			<div id="a">
+				<div id="nav-bar">
+					<a href="#content--link">
+						<div class="nav-bar--item">
+							<i id="nav-bar--link--icon" class="nav-bar--icon fa"></i>
+							链接
+						</div>
+					</a>
+					<a href="#content--friendly-link">
+						<div class="nav-bar--item">
+							<i id="nav-bar--link--friendly-link" class="nav-bar--icon fa"></i>
+							友链
+						</div>
+					</a>
+				</div>
+				<div id="content">
+					<h2 id="content--link">链接</h2>
+					<a href="http://blog.slightning.tk/" target="_blank">
+						<div class="content--item">
+							<i id="content--blog--icon" class="content--icon fa"></i>
+							<br>博客
+						</div>
+					</a>
+					<a href="https://github.com/S-L-I-G-H-T-N-I-N-G" target="_blank">
+						<div class="content--item">
+							<i id="content--github--icon" class="content--icon fa"></i>
+							<br>github
+						</div>
+					</a>
+					<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/mm.png')">
+						<i id="content--mm--icon" class="content--icon fa"></i>
+						<br>微信
+					</div>
+					<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/qq.jpg')">
+						<i id="content--qq--icon" class="content--icon fa"></i>
+						<br>QQ
+					</div>
+					<h2 id="content--friendly-link">友链</h2>
+					<a href="https://glacier.tk/" target="_blank">
+						<div class="content--item">
+							<img src="https://glacier.tk/res/icon/icon-skyblue.svg" class="content--icon fa"></img>
+							<br>冰川工作室
+						</div>
+					</a>
+					<a href="https://littleyan.tk/" target="_blank">
+						<div class="content--item">
+							<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
+							<br>是little颜鸭
+						</div>
+					</a>
+					<a href="https://blog.littleyan.tk/" target="_blank">
+						<div class="content--item">
+							<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
+							<br>little颜的blog
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="hover-window-hover">
+			<div id="hover-window">
+				<i id="hover-window--close" class="fa" onclick="closeHoverWindow()"></i><br>
+				<img id="hover-window--img">
 			</div>
 		</div>
 	</body>

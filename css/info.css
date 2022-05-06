@@ -1,0 +1,24 @@
+#info {
+    text-align: center;
+}
+#avatar {
+    width: 8rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+#name {
+    margin: 0rem;
+    font-size: 12vw;
+}
+@media only screen and (min-width: 512px) {
+    #info {
+        display: flex;
+    }
+    #avatar {
+        width: 4rem;
+    }
+    #name {
+        font-size: 3rem;
+        margin: 1rem 0rem;
+    }
+}

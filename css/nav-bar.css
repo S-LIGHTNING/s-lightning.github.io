@@ -1,0 +1,21 @@
+#nav-bar {
+    text-align: center;
+    margin-left: 1rem;
+}
+.nav-bar--item:hover {
+    background: #EEE;
+}
+.nav-bar--icon {
+    font-size: 3rem;
+}
+#nav-bar--link--icon::before {
+    content: "\f0c1";
+}
+#nav-bar--link--friendly-link::before {
+    content: "\f08e";
+}
+@media only screen and (min-width: 512px) {
+    #nav-bar {
+        width: 4rem;
+    }
+}

@@ -1,0 +1,28 @@
+#hover-window-hover {
+    display: none;
+    position: fixed;
+    top: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    background: #00000088;
+}
+#hover-window {
+    text-align: right;
+    position: fixed;
+    top: 10vh;
+    left: calc(50% - 10rem);
+    background: #FFF;
+}
+#hover-window--close {
+    font-size: 3rem;/* 
+    float: right; */
+}
+#hover-window--close::before {
+    content: "\f00d";
+}
+#hover-window--img {
+    width: 16rem;
+    padding: 2rem;
+    padding-top: 0rem;
+}

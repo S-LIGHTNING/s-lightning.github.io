@@ -1,0 +1,24 @@
+#content {
+    text-align: center;
+}
+.content--item {
+    width: 8rem;
+    text-align: center;
+    display: inline-block;
+}
+.content--icon {
+    width: 4rem;
+    font-size: 3rem;
+}
+#content--blog--icon::before {
+    content: "\f032";
+}
+#content--github--icon::before {
+    content: "\f09b";
+}
+#content--mm--icon::before {
+    content: "\f1d7";
+}
+#content--qq--icon::before {
+    content: "\f1d6";
+}
