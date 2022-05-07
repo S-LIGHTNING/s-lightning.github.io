@@ -15,6 +15,9 @@
     box-shadow: 0rem 0rem 1rem #EEE;
     bottom: 0.25rem;
 }
+.content--link {
+    display: inline-block;
+}
 .content--icon {
     width: 3rem;
     font-size: 3rem;
