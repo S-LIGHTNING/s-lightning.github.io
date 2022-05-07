@@ -1,4 +1,4 @@
-#hover-window-hover {
+#hover-window--hover {
     display: none;
     position: fixed;
     top: 0rem;
@@ -8,13 +8,21 @@
     background: #00000088;
 }
 #hover-window {
-    text-align: right;
     position: fixed;
     top: calc(50vh - 170px);
     left: calc(50% - 10rem);
     background: #FFF;
+    transition: none;
+}
+#hover-window--head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
 }
 #hover-window--close {
+    width: 3rem;
+    text-align: center;
     font-size: 3rem;
 }
 #hover-window--close:hover {
@@ -26,7 +34,7 @@
 #hover-window--img {
     height: 16rem;
     width: 16rem;
-    margin: 2rem;
+    margin: 1rem;
     margin-top: 0rem;
     background-size: cover;
     background-position: center;

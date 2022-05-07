@@ -16,7 +16,7 @@
 				color: #00CCFF;
 			}
 			body {
-				margin: 10vw;
+				margin: 5vw;
 				background: #00CCFF;
 				transition: none;
 			}
@@ -77,49 +77,56 @@
 				</a>
 				<a href="https://gitee.com/slightning" target="_blank">
 					<div class="content--item">
-						<img src="https://gitee.com/favicon.ico" class="content--icon fa"></img>
+						<img src="https://gitee.com/favicon.ico" class="content--icon fa">
 						<br>gitee
 					</div>
 				</a>
 				<a href="https://shequ.codemao.cn/user/6519713" target="_blank">
 					<div class="content--item">
-						<img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon fa"></img>
+						<img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon fa">
 						<br>编程猫
 					</div>
 				</a>
 				<h2 id="content--contact">联系</h2>
-				<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/mm.png')">
+				<div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'src/SLIGHTNING/contact/mm.png')">
 					<i id="content--mm--icon" class="content--icon fa"></i>
 					<br>微信
 				</div>
-				<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/qq.jpg')">
+				<div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'src/SLIGHTNING/contact/qq.jpg')">
 					<i id="content--qq--icon" class="content--icon fa"></i>
 					<br>QQ
 				</div>
+				<div class="content--item" onclick="showHoverWindow('没有二维码，不要加我钉钉', '')">
+					<img src="https://gw.alicdn.com/imgextra/i3/O1CN01eMicSg1GVD4uXMWGv_!!6000000000627-73-tps-32-32.ico" class="content--icon fa">
+					<br>钉钉
+				</div>
+				<a href="mailto:3157420882@qq.com" target="_blank">
+					<div class="content--item">
+						<i id="content--mail--icon" class="content--icon fa"></i>
+						<br>邮箱
+					</div>
+				</a>
 				<h2 id="content--friendly-link">友链</h2>
 				<a href="https://glacier.tk/" target="_blank">
 					<div class="content--item">
-						<img src="https://glacier.tk/res/icon/icon-skyblue.svg" class="content--icon fa"></img>
+						<img src="https://glacier.tk/res/icon/icon-skyblue.svg" class="content--icon fa">
 						<br>冰川工作室
 					</div>
 				</a>
 				<a href="https://littleyan.tk/" target="_blank">
 					<div class="content--item">
-						<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
+						<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa">
 						<br>是little颜鸭
-					</div>
-				</a>
-				<a href="https://blog.littleyan.tk/" target="_blank">
-					<div class="content--item">
-						<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
-						<br>little颜的blog
 					</div>
 				</a>
 			</div>
 		</div>
-		<div id="hover-window-hover">
+		<div id="hover-window--hover">
 			<div id="hover-window">
-				<i id="hover-window--close" class="fa" onclick="closeHoverWindow()"></i><br>
+				<div id="hover-window--head">
+					<span id="hover-window--title"></span>
+					<i id="hover-window--close" class="fa" onclick="closeHoverWindow()"></i>
+				</div>
 				<div id="hover-window--img"></div>
 			</div>
 		</div>
