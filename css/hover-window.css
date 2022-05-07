@@ -1,5 +1,6 @@
 #hover-window--hover {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
     top: 0rem;
     bottom: 0rem;
@@ -12,7 +13,8 @@
     top: calc(50vh - 170px);
     left: calc(50% - 9rem);
     background: #FFF;
-    transition: none;
+    transform: scale(0.5);
+    transition: transform 0.5s;
 }
 #hover-window--head {
     display: flex;
@@ -35,6 +37,7 @@
     height: 16rem;
     width: 16rem;
     margin: 1rem;
+    transition: none;
     margin-top: 0rem;
     background-size: cover;
     background-position: center;

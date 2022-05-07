@@ -9,6 +9,7 @@
     display: inline-block;
     position: relative;
     bottom: 0rem;
+    cursor:pointer;
 }
 .content--item:hover {
     box-shadow: 0rem 0rem 1rem #EEE;
