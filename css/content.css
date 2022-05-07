@@ -1,9 +1,11 @@
 #content {
+    display: inline-table;
     text-align: center;
 }
 .content--item {
     width: 8rem;
     text-align: center;
+    padding: 0.5rem 0rem;
     display: inline-block;
 }
 .content--icon {
@@ -21,4 +23,9 @@
 }
 #content--qq--icon::before {
     content: "\f1d6";
+}
+@media only screen and (min-width: 512px) {
+    #content {
+        width: calc(100% - 6rem);
+    }
 }

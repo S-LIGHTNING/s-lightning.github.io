@@ -1,6 +1,7 @@
 #nav-bar {
+    background: #FFF;
     text-align: center;
-    margin-left: 1rem;
+    top: 0rem;
 }
 .nav-bar--item:hover {
     background: #EEE;
@@ -17,5 +18,8 @@
 @media only screen and (min-width: 512px) {
     #nav-bar {
         width: 4rem;
+        position: sticky;
+        margin-left: 1rem;
+        display: inline-table;
     }
 }

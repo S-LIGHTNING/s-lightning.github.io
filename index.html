@@ -30,11 +30,6 @@
 				box-shadow: 0rem 0rem 1rem #888;
 				border-radius: 1rem;
 			}
-			@media only screen and (min-width: 512px) {
-				#a {
-					display: flex;
-				}
-			}
 		</style>
 	</head>
 	<body>
@@ -43,69 +38,67 @@
 				<img id="avatar" src="src/SLIGHTNING/avatar.png" alt="">
 				<h1 id="name">SLIGHTNING</h1>
 			</div>
-			<div id="a">
-				<div id="nav-bar">
-					<a href="#content--link">
-						<div class="nav-bar--item">
-							<i id="nav-bar--link--icon" class="nav-bar--icon fa"></i>
-							链接
-						</div>
-					</a>
-					<a href="#content--friendly-link">
-						<div class="nav-bar--item">
-							<i id="nav-bar--link--friendly-link" class="nav-bar--icon fa"></i>
-							友链
-						</div>
-					</a>
-				</div>
-				<div id="content">
-					<h2 id="content--link">链接</h2>
-					<a href="http://blog.slightning.tk/" target="_blank">
-						<div class="content--item">
-							<i id="content--blog--icon" class="content--icon fa"></i>
-							<br>博客
-						</div>
-					</a>
-					<a href="https://github.com/S-L-I-G-H-T-N-I-N-G" target="_blank">
-						<div class="content--item">
-							<i id="content--github--icon" class="content--icon fa"></i>
-							<br>github
-						</div>
-					</a>
-					<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/mm.png')">
-						<i id="content--mm--icon" class="content--icon fa"></i>
-						<br>微信
+			<div id="nav-bar">
+				<a href="#content--link">
+					<div class="nav-bar--item">
+						<i id="nav-bar--link--icon" class="nav-bar--icon fa"></i>
+						链接
 					</div>
-					<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/qq.jpg')">
-						<i id="content--qq--icon" class="content--icon fa"></i>
-						<br>QQ
+				</a>
+				<a href="#content--friendly-link">
+					<div class="nav-bar--item">
+						<i id="nav-bar--link--friendly-link" class="nav-bar--icon fa"></i>
+						友链
 					</div>
-					<h2 id="content--friendly-link">友链</h2>
-					<a href="https://glacier.tk/" target="_blank">
-						<div class="content--item">
-							<img src="https://glacier.tk/res/icon/icon-skyblue.svg" class="content--icon fa"></img>
-							<br>冰川工作室
-						</div>
-					</a>
-					<a href="https://littleyan.tk/" target="_blank">
-						<div class="content--item">
-							<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
-							<br>是little颜鸭
-						</div>
-					</a>
-					<a href="https://blog.littleyan.tk/" target="_blank">
-						<div class="content--item">
-							<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
-							<br>little颜的blog
-						</div>
-					</a>
+				</a>
+			</div>
+			<div id="content">
+				<h2 id="content--link">链接</h2>
+				<a href="http://blog.slightning.tk/" target="_blank">
+					<div class="content--item">
+						<i id="content--blog--icon" class="content--icon fa"></i>
+						<br>博客
+					</div>
+				</a>
+				<a href="https://github.com/S-L-I-G-H-T-N-I-N-G" target="_blank">
+					<div class="content--item">
+						<i id="content--github--icon" class="content--icon fa"></i>
+						<br>github
+					</div>
+				</a>
+				<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/mm.png')">
+					<i id="content--mm--icon" class="content--icon fa"></i>
+					<br>微信
 				</div>
+				<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/qq.jpg')">
+					<i id="content--qq--icon" class="content--icon fa"></i>
+					<br>QQ
+				</div>
+				<h2 id="content--friendly-link">友链</h2>
+				<a href="https://glacier.tk/" target="_blank">
+					<div class="content--item">
+						<img src="https://glacier.tk/res/icon/icon-skyblue.svg" class="content--icon fa"></img>
+						<br>冰川工作室
+					</div>
+				</a>
+				<a href="https://littleyan.tk/" target="_blank">
+					<div class="content--item">
+						<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
+						<br>是little颜鸭
+					</div>
+				</a>
+				<a href="https://blog.littleyan.tk/" target="_blank">
+					<div class="content--item">
+						<img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.png" class="content--icon fa"></img>
+						<br>little颜的blog
+					</div>
+				</a>
 			</div>
 		</div>
 		<div id="hover-window-hover">
 			<div id="hover-window">
 				<i id="hover-window--close" class="fa" onclick="closeHoverWindow()"></i><br>
-				<img id="hover-window--img">
+				<div id="hover-window--img"></div>
 			</div>
 		</div>
 	</body>

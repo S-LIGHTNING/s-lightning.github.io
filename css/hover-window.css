@@ -10,19 +10,21 @@
 #hover-window {
     text-align: right;
     position: fixed;
-    top: 10vh;
+    top: calc(50vh - 170px);
     left: calc(50% - 10rem);
     background: #FFF;
 }
 #hover-window--close {
-    font-size: 3rem;/* 
-    float: right; */
+    font-size: 3rem;
 }
 #hover-window--close::before {
     content: "\f00d";
 }
 #hover-window--img {
+    height: 16rem;
     width: 16rem;
-    padding: 2rem;
-    padding-top: 0rem;
+    margin: 2rem;
+    margin-top: 0rem;
+    background-size: cover;
+    background-position: center;
 }
