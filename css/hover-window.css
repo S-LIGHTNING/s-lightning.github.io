@@ -17,6 +17,9 @@
 #hover-window--close {
     font-size: 3rem;
 }
+#hover-window--close:hover {
+    background: #EEE;
+}
 #hover-window--close::before {
     content: "\f00d";
 }

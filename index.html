@@ -16,22 +16,22 @@
 				color: #00CCFF;
 			}
 			body {
-				margin: 0rem;
+				margin: 10vw;
 				background: #00CCFF;
+				transition: none;
 			}
 			a {
 				text-decoration: none;
 				-webkit-tap-highlight-color: #00000000;
 			}
 			#card {
-				margin-left: 10vw;
-				margin-top: 10vw;
-				margin-bottom: 10vw;
-				width: 80vw;
+				margin: auto;
+				max-width: 64rem;
 				padding-bottom: 1rem;
 				background: #FFF;
-				box-shadow: 0rem 0rem 1rem #888;
-				border-radius: 1rem;
+			}
+			#card:hover {
+				box-shadow: 0rem 0rem 2rem #888;
 			}
 		</style>
 	</head>
@@ -48,9 +48,15 @@
 						链接
 					</div>
 				</a>
+				<a href="#content--contact">
+					<div class="nav-bar--item">
+						<i id="nav-bar--contact--icon" class="nav-bar--icon fa"></i>
+						联系
+					</div>
+				</a>
 				<a href="#content--friendly-link">
 					<div class="nav-bar--item">
-						<i id="nav-bar--link--friendly-link" class="nav-bar--icon fa"></i>
+						<i id="nav-bar--friendly-link--icon" class="nav-bar--icon fa"></i>
 						友链
 					</div>
 				</a>
@@ -69,6 +75,19 @@
 						<br>github
 					</div>
 				</a>
+				<a href="https://gitee.com/slightning" target="_blank">
+					<div class="content--item">
+						<img src="https://gitee.com/favicon.ico" class="content--icon fa"></img>
+						<br>gitee
+					</div>
+				</a>
+				<a href="https://shequ.codemao.cn/user/6519713" target="_blank">
+					<div class="content--item">
+						<img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon fa"></img>
+						<br>编程猫
+					</div>
+				</a>
+				<h2 id="content--contact">联系</h2>
 				<div class="content--item" onclick="showImg('src/SLIGHTNING/contact/mm.png')">
 					<i id="content--mm--icon" class="content--icon fa"></i>
 					<br>微信

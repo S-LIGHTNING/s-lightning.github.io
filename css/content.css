@@ -7,9 +7,15 @@
     text-align: center;
     padding: 0.5rem 0rem;
     display: inline-block;
+    position: relative;
+    bottom: 0rem;
+}
+.content--item:hover {
+    box-shadow: 0rem 0rem 1rem #EEE;
+    bottom: 0.25rem;
 }
 .content--icon {
-    width: 4rem;
+    width: 3rem;
     font-size: 3rem;
 }
 #content--blog--icon::before {

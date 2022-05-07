@@ -12,7 +12,10 @@
 #nav-bar--link--icon::before {
     content: "\f0c1";
 }
-#nav-bar--link--friendly-link::before {
+#nav-bar--contact--icon::before {
+    content: "\f086";
+}
+#nav-bar--friendly-link--icon::before {
     content: "\f08e";
 }
 @media only screen and (min-width: 512px) {
