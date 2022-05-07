@@ -10,7 +10,7 @@
 #hover-window {
     position: fixed;
     top: calc(50vh - 170px);
-    left: calc(50% - 10rem);
+    left: calc(50% - 9rem);
     background: #FFF;
     transition: none;
 }
