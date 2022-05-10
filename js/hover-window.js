@@ -1,14 +1,10 @@
 function showHoverWindow(title, src) {
     document.getElementById("hover-window--title").innerText = title
     document.getElementById("hover-window--img").style.backgroundImage = "url(" + src + ")"
-    var hoverWindowHover = document.getElementById("hover-window--hover").style
-    hoverWindowHover.pointerEvents = "auto"
-    hoverWindowHover.opacity = 1
-    document.getElementById("hover-window").style.transform = "scale(1)"
+    document.getElementById("hover-window--hover").classList.remove("hover-window--hover--hide")
+    document.getElementById("hover-window").classList.remove("hover-window--hide")
 }
 function closeHoverWindow() {
-    var hoverWindowHover = document.getElementById("hover-window--hover").style
-    hoverWindowHover.pointerEvents = "none"
-    hoverWindowHover.opacity = 0
-    document.getElementById("hover-window").style.transform = "scale(0.5)"
+    document.getElementById("hover-window--hover").classList.add("hover-window--hover--hide")
+    document.getElementById("hover-window").classList.add("hover-window--hide")
 }

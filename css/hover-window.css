@@ -1,6 +1,4 @@
 #hover-window--hover {
-    opacity: 0;
-    pointer-events: none;
     position: fixed;
     top: 0rem;
     bottom: 0rem;
@@ -8,13 +6,19 @@
     right: 0rem;
     background: #00000088;
 }
+.hover-window--hover--hide {
+    opacity: 0;
+    pointer-events: none;
+}
 #hover-window {
     position: fixed;
     top: calc(50vh - 170px);
     left: calc(50% - 9rem);
     background: #FFF;
-    transform: scale(0.5);
     transition: transform 0.5s;
+}
+.hover-window--hide {
+    transform: scale(0.5);
 }
 #hover-window--head {
     display: flex;

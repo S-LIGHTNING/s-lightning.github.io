@@ -5,7 +5,7 @@
 .content--item {
     width: 8rem;
     text-align: center;
-    padding: 0.5rem 0rem;
+    padding-block: 0.5rem;
     display: inline-block;
     position: relative;
     bottom: 0rem;
@@ -15,27 +15,9 @@
     box-shadow: 0rem 0rem 1rem #EEE;
     bottom: 0.25rem;
 }
-.content--link {
-    display: inline-block;
-}
 .content--icon {
     width: 3rem;
     font-size: 3rem;
-}
-#content--blog--icon::before {
-    content: "\f032";
-}
-#content--github--icon::before {
-    content: "\f09b";
-}
-#content--mm--icon::before {
-    content: "\f1d7";
-}
-#content--qq--icon::before {
-    content: "\f1d6";
-}
-#content--mail--icon::before {
-    content: "\f0e0";
 }
 @media only screen and (min-width: 512px) {
     #content {

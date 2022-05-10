@@ -3,20 +3,14 @@
     text-align: center;
     top: 0rem;
 }
+.nav-bar--item {
+    display: inline-block;
+}
 .nav-bar--item:hover {
     background: #EEE;
 }
 .nav-bar--icon {
     font-size: 3rem;
-}
-#nav-bar--link--icon::before {
-    content: "\f0c1";
-}
-#nav-bar--contact--icon::before {
-    content: "\f086";
-}
-#nav-bar--friendly-link--icon::before {
-    content: "\f08e";
 }
 @media only screen and (min-width: 512px) {
     #nav-bar {
