@@ -1,13 +1,13 @@
 #nav-bar {
-    background: #FFF;
+    background-color: #000;
     text-align: center;
-    top: 0rem;
+    top: 5vw;
 }
 .nav-bar--item {
     display: inline-block;
 }
 .nav-bar--item:hover {
-    background: #EEE;
+    background-color: #88888888;
 }
 .nav-bar--icon {
     font-size: 3rem;

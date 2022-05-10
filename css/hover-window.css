@@ -4,7 +4,7 @@
     bottom: 0rem;
     left: 0rem;
     right: 0rem;
-    background: #00000088;
+    background: #88888888;
 }
 .hover-window--hover--hide {
     opacity: 0;
@@ -14,7 +14,7 @@
     position: fixed;
     top: calc(50vh - 170px);
     left: calc(50% - 9rem);
-    background: #FFF;
+    background-color: #88888888;
     transition: transform 0.5s;
 }
 .hover-window--hide {
@@ -32,7 +32,7 @@
     font-size: 3rem;
 }
 #hover-window--close:hover {
-    background: #EEE;
+    background-color: #BBBBBB88;
 }
 #hover-window--close::before {
     content: "\f00d";
