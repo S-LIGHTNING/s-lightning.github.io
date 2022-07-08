@@ -1,6 +1,5 @@
 #info {
     text-align: center;
-    overflow: hidden;
 }
 #avatar {
     width: 8rem;
@@ -8,8 +7,9 @@
     border-radius: 0.5rem;
 }
 #name {
-    margin: 0rem;
-    font-size: 12vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .name {
     width: 2rem;
@@ -23,9 +23,5 @@
     }
     #avatar {
         width: 4rem;
-    }
-    #name {
-        font-size: 3rem;
-        margin: 1rem 0rem;
     }
 }

@@ -1,6 +1,7 @@
 #content {
     display: inline-table;
     text-align: center;
+    padding-bottom: 1rem;
 }
 .content--item {
     width: 8rem;
