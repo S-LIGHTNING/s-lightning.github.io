@@ -1,7 +1,9 @@
 #nav-bar {
+    position: sticky;
     background-color: #000;
     text-align: center;
-    top: 5vw;
+    top: 0rem;
+    padding-block: 5vw;
 }
 .nav-bar--item {
     display: inline-block;
@@ -14,8 +16,9 @@
 }
 @media only screen and (min-width: 512px) {
     #nav-bar {
+        top: 6rem;
         width: 4rem;
-        position: sticky;
+        padding-block: 0rem;
         margin-left: 1rem;
         display: inline-table;
     }
