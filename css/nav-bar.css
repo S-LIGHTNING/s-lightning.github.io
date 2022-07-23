@@ -1,9 +1,11 @@
 #nav-bar {
     position: sticky;
+    z-index: 8;
     background-color: #000;
     text-align: center;
     top: 0rem;
     padding-block: 5vw;
+    cursor: pointer;
 }
 .nav-bar--item {
     display: inline-block;
