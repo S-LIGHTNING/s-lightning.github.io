@@ -5,16 +5,18 @@
     text-align: center;
     top: 0rem;
     padding-block: 5vw;
-    cursor: pointer;
 }
 .nav-bar--item {
+    width: 4rem;
     display: inline-block;
+    cursor: pointer;
 }
 .nav-bar--item:hover {
     background-color: #88888888;
 }
 .nav-bar--icon {
     font-size: 3rem;
+    display: block;
 }
 @media only screen and (min-width: 512px) {
     #nav-bar {
