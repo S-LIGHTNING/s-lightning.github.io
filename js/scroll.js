@@ -13,5 +13,5 @@ function scrollToEle(id) {
     var topEle;
     if (innerWidth < 512) topEle = "nav-bar"
     else topEle = "info"
-    document.documentElement.scrollTop = top - document.getElementById(topEle).offsetHeight
+    document.documentElement.scrollTop =document.body.scrollTop =  top - document.getElementById(topEle).offsetHeight
 }

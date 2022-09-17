@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 .nav-bar--item:hover {
-    background-color: #88888888;
+    filter: drop-shadow(2px 2px 4px #FFF);
 }
 .nav-bar--icon {
     font-size: 3rem;
