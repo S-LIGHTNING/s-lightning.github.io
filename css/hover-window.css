@@ -4,7 +4,7 @@
     bottom: 0rem;
     left: 0rem;
     right: 0rem;
-    background: #88888888;
+    background: #80808080;
 }
 .hover-window--hover--hide {
     opacity: 0;
@@ -14,7 +14,8 @@
     position: fixed;
     top: calc(50vh - 170px);
     left: calc(50% - 9rem);
-    background-color: #88888888;
+    background-color: #808080B0;
+    backdrop-filter: blur(4px);
     transition: transform 0.2s;
 }
 .hover-window--hide {
@@ -36,7 +37,7 @@
     font-size: 3rem;
 }
 #hover-window--close:hover {
-    background-color: #FF000088;
+    background-color: #FF000080;
     color: #FFF;
 }
 #hover-window--close::before {

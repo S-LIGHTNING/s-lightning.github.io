@@ -31,9 +31,12 @@
 			a {
 				text-decoration: none;
 			}
-			#card {
+			#card--around {
 				margin: auto;
 				max-width: 64rem;
+				backdrop-filter: blur(0.5vw);
+			}
+			#card {
 				min-height: calc(100vh - 10vw);
 				background: #000;
 				opacity: 0.8;
@@ -45,95 +48,101 @@
 	</head>
 	<body>
 		<script src="js/set--background--image.js"></script>
-		<div id="card">
-			<div id="info">
-				<img id="avatar" src="src/SLIGHTNING/avatar.png" alt="头像">
-				<div id="name">
-					<img class="name" src="src/text/S.svg">
-					<img class="name" src="src/text/L.svg">
-					<img class="name" src="src/text/I.svg">
-					<img class="name" src="src/text/G.svg">
-					<img class="name" src="src/text/H.svg">
-					<img class="name" src="src/text/T.svg">
-					<img class="name" src="src/text/N.svg">
-					<img class="name" src="src/text/I.svg">
-					<img class="name" src="src/text/N.svg">
-					<img class="name" src="src/text/G.svg">
-			    </div>
-			</div>
-			<div id="nav-bar">
-				<a class="nav-bar--item" onclick="scrollToEle('content--link')">
-					<i class="nav-bar--icon fa fa-chain"></i>
-					链接
-				</a>
-				<a class="nav-bar--item" onclick="scrollToEle('content--contact')">
-					<i class="nav-bar--icon fa fa-comments"></i>
-					联系
-				</a>
-				<a class="nav-bar--item" onclick="scrollToEle('content--friendly-link')">
-					<i class="nav-bar--icon fa fa-external-link"></i>
-					友链
-				</a>
-				<a class="nav-bar--item" onclick="scrollToEle('content--ad')">
-					<i class="nav-bar--icon fa fa-adn"></i>
-					广告
-				</a>
-			</div>
-			<div id="content">
-				<h2 id="content--link">链接</h2>
-				<a class="content--item" href="http://blog.slightning.tk/" target="_blank">
-					<i class="content--icon fa  fa-bold"></i>
-					<br>博客
-				</a>
-				<a class="content--item" href="https://github.com/S-L-I-G-H-T-N-I-N-G" target="_blank">
-					<i class="content--icon fa fa-github"></i>
-					<br>github
-				</a>
-				<a class="content--item" href="https://gitee.com/slightning" target="_blank">
-					<img src="https://gitee.com/favicon.ico" class="content--icon">
-					<br>gitee
-				</a>
-				<a class="content--item" href="https://shequ.codemao.cn/user/6519713" target="_blank">
-					<img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon">
-					<br>编程猫
-				</a>
-				<h2 id="content--contact">联系</h2>
-				<div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'src/SLIGHTNING/contact/mm.png')">
-					<i class="content--icon fa fa-wechat"></i>
-					<br>微信
+		<div id="card--around">
+			<div id="card">
+				<div id="info">
+					<img id="avatar" src="src/SLIGHTNING/avatar.png" alt="头像">
+					<div id="name">
+						<img class="name" src="src/text/S.svg">
+						<img class="name" src="src/text/L.svg">
+						<img class="name" src="src/text/I.svg">
+						<img class="name" src="src/text/G.svg">
+						<img class="name" src="src/text/H.svg">
+						<img class="name" src="src/text/T.svg">
+						<img class="name" src="src/text/N.svg">
+						<img class="name" src="src/text/I.svg">
+						<img class="name" src="src/text/N.svg">
+						<img class="name" src="src/text/G.svg">
+					</div>
 				</div>
-				<div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'src/SLIGHTNING/contact/qq.jpg')">
-					<i class="content--icon fa fa-qq"></i>
-					<br>QQ
+				<div id="nav-bar">
+					<a class="nav-bar--item" onclick="scrollToEle('content--link')">
+						<i class="nav-bar--icon fa fa-chain"></i>
+						链接
+					</a>
+					<a class="nav-bar--item" onclick="scrollToEle('content--contact')">
+						<i class="nav-bar--icon fa fa-comments"></i>
+						联系
+					</a>
+					<a class="nav-bar--item" onclick="scrollToEle('content--friendly-link')">
+						<i class="nav-bar--icon fa fa-external-link"></i>
+						友链
+					</a>
+					<a class="nav-bar--item" onclick="scrollToEle('content--ad')">
+						<i class="nav-bar--icon fa fa-adn"></i>
+						广告
+					</a>
 				</div>
-				<div class="content--item" onclick="showHoverWindow('没有二维码，不要加我钉钉', '')">
-					<img src="https://gw.alicdn.com/imgextra/i3/O1CN01eMicSg1GVD4uXMWGv_!!6000000000627-73-tps-32-32.ico" class="content--icon">
-					<br>钉钉
+				<div id="content">
+					<h2 id="content--link">链接</h2>
+					<a class="content--item" href="http://blog.slightning.tk/" target="_blank">
+						<i class="content--icon fa  fa-bold"></i>
+						<br>博客
+					</a>
+					<a class="content--item" href="https://github.com/S-L-I-G-H-T-N-I-N-G" target="_blank">
+						<i class="content--icon fa fa-github"></i>
+						<br>github
+					</a>
+					<a class="content--item" href="https://gitee.com/slightning" target="_blank">
+						<img src="https://gitee.com/favicon.ico" class="content--icon">
+						<br>gitee
+					</a>
+					<a class="content--item" href="https://shequ.codemao.cn/user/6519713" target="_blank">
+						<img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon">
+						<br>编程猫
+					</a>
+					<h2 id="content--contact">联系</h2>
+					<div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'src/SLIGHTNING/contact/mm.png')">
+						<i class="content--icon fa fa-wechat"></i>
+						<br>微信
+					</div>
+					<div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'src/SLIGHTNING/contact/qq.jpg')">
+						<i class="content--icon fa fa-qq"></i>
+						<br>QQ
+					</div>
+					<div class="content--item" onclick="showHoverWindow('没有二维码，不要加我钉钉', '')">
+						<img src="https://gw.alicdn.com/imgextra/i3/O1CN01eMicSg1GVD4uXMWGv_!!6000000000627-73-tps-32-32.ico" class="content--icon">
+						<br>钉钉
+					</div>
+					<a class="content--item" href="mailto:3157420882@qq.com" target="_blank">
+						<i class="content--icon fa fa-envelope"></i>
+						<br>邮箱
+					</a>
+					<h2 id="content--friendly-link">友链</h2>
+					<a class="content--item" href="https://glacier.tk/" target="_blank">
+						<img src="https://glacier.tk/res/icon/icon.svg" class="content--icon">
+						<br>冰川工作室
+					</a>
+					<a class="content--item" href="https://littleyan.tk/" target="_blank">
+						<img src="https://img.littleyan.tk/img/logo.jpg" class="content--icon">
+						<br>是little颜鸭
+					</a>
+					<a class="content--item" href="https://hellomitsuha.github.io/" target="_blank">
+						<img src="http://q1.qlogo.cn/g?b=qq&nk=1476460467&s=640" class="content--icon">
+						<br>宫水三叶
+					</a>
+					<h2 id="content--ad">广告</h2>
+					<p>建网站找 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a>！十年建站经验，值得信赖！<br>
+						前端、后端、开发、运维、测试一条龙服务！<br> 超高安全性不怕 DDOS，各种注入完美拦截！<br>
+						顶级配置极致性能极速加载上亿并发毫无压力!<br>
+						超快开发速度说完需求就能建好！<br> 猛戳 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>链接</a> 联系 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a> ，立刻拥有属于你的网站！<br>
+						开个<strong>玩笑</strong>哈哈哈
+					</p>
+					<p>广告位招租，详情加 QQ 3157420882</p>
+					<h2 id="content--littleyan"><a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a> 牛逼</h2>
+					<p>震惊！初中生 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a> 因为疫情居然在家用Python做出了智能图像识别器！</p>
+					<iframe src="https://player.bilibili.com/player.html?aid=941245741&bvid=BV1GW4y127LM&cid=782265379&page=1" style="width: 100%; height: 64vw;max-height: 50rem;" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 				</div>
-				<a class="content--item" href="mailto:3157420882@qq.com" target="_blank">
-					<i class="content--icon fa fa-envelope"></i>
-					<br>邮箱
-				</a>
-				<h2 id="content--friendly-link">友链</h2>
-				<a class="content--item" href="https://glacier.tk/" target="_blank">
-					<img src="https://glacier.tk/res/icon/icon.svg" class="content--icon">
-					<br>冰川工作室
-				</a>
-				<a class="content--item" href="https://littleyan.tk/" target="_blank">
-					<img src="https://img.littleyan.tk/img/logo.jpg" class="content--icon">
-					<br>是little颜鸭
-				</a>
-				<h2 id="content--ad">广告</h2>
-				<p>建网站找 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a>！十年建站经验，值得信赖！<br>
-					前端、后端、开发、运维、测试一条龙服务！<br> 超高安全性不怕 DDOS，各种注入完美拦截！<br>
-					顶级配置极致性能极速加载上亿并发毫无压力!<br>
-					超快开发速度说完需求就能建好！<br> 猛戳 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>链接</a> 联系 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a> ，立刻拥有属于你的网站！<br>
-					开个<strong>玩笑</strong>哈哈哈
-				</p>
-				<p>广告位招租，详情加 QQ 3157420882</p>
-				<h2 id="content--littleyan"><a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a> 牛逼</h2>
-				<p>震惊！初中生 <a href="https://littleyan.tk" target="_blank"><i class="fa fa-link"></i>little颜</a> 因为疫情居然在家用Python做出了智能图像识别器！</p>
-				<iframe src="https://player.bilibili.com/player.html?aid=941245741&bvid=BV1GW4y127LM&cid=782265379&page=1" style="width: 100%; height: 64vw;max-height: 50rem;" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 			</div>
 		</div>
 		<div id="hover-window--hover" class="hover-window--hover--hide">
