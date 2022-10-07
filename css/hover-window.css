@@ -4,6 +4,9 @@
     bottom: 0rem;
     left: 0rem;
     right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #80808080;
 }
 .hover-window--hover--hide {
@@ -11,9 +14,6 @@
     pointer-events: none;
 }
 #hover-window {
-    position: fixed;
-    top: calc(50vh - 170px);
-    left: calc(50% - 9rem);
     background-color: #808080B0;
     backdrop-filter: blur(4px);
     transition: transform 0.2s;
@@ -44,7 +44,8 @@
     content: "\f00d";
 }
 #hover-window--img {
-    height: 16rem;
+    display: block;
+    min-height: 16rem;
     width: 16rem;
     margin: 1rem;
     transition: none;
