@@ -1,7 +1,8 @@
 #nav-bar {
     position: sticky;
     z-index: 8;
-    background-color: #000;
+    /* background-color: #FFF; */
+    /* backdrop-filter: blur(32px); */
     text-align: center;
     top: 0rem;
     padding-block: 5vw;

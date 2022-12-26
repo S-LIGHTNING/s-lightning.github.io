@@ -1,6 +1,7 @@
 #info {
     top: 0;
-    background-color: #000;
+    /* background-color: #FFF; */
+    /* backdrop-filter: blur(32px); */
     text-align: center;
 }
 #avatar {
@@ -16,8 +17,8 @@
 .name {
     width: 2rem;
     height: 4rem;
-    margin: -3rem 0 4rem;
-    filter: drop-shadow(0rem 4rem #00CCFF)
+    margin: -4rem 0 4rem;
+    filter: drop-shadow(0rem 5rem #00CCFF)
 }
 @media only screen and (min-width: 512px) {
     #info {

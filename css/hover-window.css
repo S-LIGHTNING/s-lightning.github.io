@@ -1,4 +1,5 @@
 #hover-window--hover {
+    z-index: 32;
     position: fixed;
     top: 0rem;
     bottom: 0rem;
@@ -14,7 +15,7 @@
     pointer-events: none;
 }
 #hover-window {
-    background-color: #808080B0;
+    background-color: #FFFFFFB0;
     backdrop-filter: blur(4px);
     transition: transform 0.2s;
 }

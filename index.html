@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>SLIGHTNING 的主页</title>
-		<link rel="shortcut icon" href="src/icon.png">
+		<link rel="shortcut icon" href="res/icon.png">
 		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 		<link rel="stylesheet" href="css/info.css">
 		<link rel="stylesheet" href="css/nav-bar.css">
@@ -22,7 +22,7 @@
 			}
 			body {
 				margin: 5vw;
-				background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fquotefancy.com%2Fmedia%2Fwallpaper%2F3840x2160%2F1700728-Linus-Torvalds-Quote-Talk-is-cheap-Show-me-the-code.jpg&refer=http%3A%2F%2Fquotefancy.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654756759&t=980cca4b349ff1bf5e9637a5fa1d96ef);
+				background-image: url(/res/SLIGHTNING/background.png);
 				background-size: cover;
 				background-position: center;
 				background-attachment: fixed;
@@ -34,12 +34,12 @@
 			#card--around {
 				margin: auto;
 				max-width: 64rem;
-				backdrop-filter: blur(0.5vw);
+				/* backdrop-filter: blur(0.5vw); */
 			}
 			#card {
 				min-height: calc(100vh - 10vw);
-				background: #000;
-				opacity: 0.8;
+				/* background: #FFF; */
+				/* opacity: 0.8; */
 			}
 			#card:hover {
 				box-shadow: 0rem 0rem 2rem #888;
@@ -51,18 +51,18 @@
 		<div id="card--around">
 			<div id="card">
 				<div id="info">
-					<img id="avatar" src="src/SLIGHTNING/avatar.png" alt="头像">
+					<img id="avatar" src="res/SLIGHTNING/avatar.png" alt="头像">
 					<div id="name">
-						<img class="name" src="src/text/S.svg">
-						<img class="name" src="src/text/L.svg">
-						<img class="name" src="src/text/I.svg">
-						<img class="name" src="src/text/G.svg">
-						<img class="name" src="src/text/H.svg">
-						<img class="name" src="src/text/T.svg">
-						<img class="name" src="src/text/N.svg">
-						<img class="name" src="src/text/I.svg">
-						<img class="name" src="src/text/N.svg">
-						<img class="name" src="src/text/G.svg">
+						<img class="name" src="res/text/S.svg">
+						<img class="name" src="res/text/L.svg">
+						<img class="name" src="res/text/I.svg">
+						<img class="name" src="res/text/G.svg">
+						<img class="name" src="res/text/H.svg">
+						<img class="name" src="res/text/T.svg">
+						<img class="name" src="res/text/N.svg">
+						<img class="name" src="res/text/I.svg">
+						<img class="name" src="res/text/N.svg">
+						<img class="name" src="res/text/G.svg">
 					</div>
 				</div>
 				<div id="nav-bar">
@@ -102,11 +102,11 @@
 						<br>编程猫
 					</a>
 					<h2 id="content--contact">联系</h2>
-					<div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'src/SLIGHTNING/contact/mm.png')">
+					<div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'res/SLIGHTNING/contact/mm.png')">
 						<i class="content--icon fa fa-wechat"></i>
 						<br>微信
 					</div>
-					<div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'src/SLIGHTNING/contact/qq.jpg')">
+					<div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'res/SLIGHTNING/contact/qq.jpg')">
 						<i class="content--icon fa fa-qq"></i>
 						<br>QQ
 					</div>
