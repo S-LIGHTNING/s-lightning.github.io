@@ -14,7 +14,7 @@
 }
 .content--item:hover {
     box-shadow: 0rem 0rem 1rem #888;
-    filter: drop-shadow(0rem 0rem 0.5rem #FFF);
+    filter: drop-shadow(0rem 0rem 0.5rem #888);
     bottom: 0.25rem;
 }
 .content--icon {

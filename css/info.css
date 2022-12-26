@@ -1,5 +1,5 @@
 #info {
-    top: 0;
+    top: -0.5rem;
     /* background-color: #FFF; */
     /* backdrop-filter: blur(32px); */
     text-align: center;
@@ -17,7 +17,7 @@
 .name {
     width: 2rem;
     height: 4rem;
-    margin: -4rem 0 4rem;
+    margin: -4rem 0 5rem;
     filter: drop-shadow(0rem 5rem #00CCFF)
 }
 @media only screen and (min-width: 512px) {
