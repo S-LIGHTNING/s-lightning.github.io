@@ -28,9 +28,6 @@
     align-items: center;
     padding-left: 1rem;
 }
-#hover-window--title {
-    text-shadow: 0rem 0rem 4px #888;
-}
 #hover-window--close {
     width: 3rem;
     cursor: pointer;

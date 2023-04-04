@@ -13,8 +13,8 @@
 		<script src="js/scroll.js"></script>
 		<style>
 			* {
-				transition: all 0.2s;
 				color: #00CCFF;
+				transition: all 0.2s;
 				-webkit-tap-highlight-color: #00000000;
 			}
 			html, body {
@@ -22,8 +22,8 @@
 			}
 			body {
 				margin: 5vw;
-				background-image: url(/res/SLIGHTNING/background.png);
-				background-size: cover;
+				background-image: url(/res/SLIGHTNING/background.jpeg);
+				background-size: contain;
 				background-position: center;
 				background-attachment: fixed;
 				transition: background-image 0.2s;
@@ -37,12 +37,14 @@
 				/* backdrop-filter: blur(0.5vw); */
 			}
 			#card {
+				transition: all 0.6s;
 				min-height: calc(100vh - 10vw);
 				/* background: #FFF; */
 				/* opacity: 0.8; */
 			}
 			#card:hover {
 				box-shadow: 0rem 0rem 2rem #888;
+				background-color: #000000C0;
 			}
 		</style>
 	</head>
