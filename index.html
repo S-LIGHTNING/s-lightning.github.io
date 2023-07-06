@@ -5,12 +5,13 @@
 		<title>SLIGHTNING 的主页</title>
 		<link rel="shortcut icon" href="res/icon.png">
 		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-		<link rel="stylesheet" href="css/info.css">
-		<link rel="stylesheet" href="css/nav-bar.css">
-		<link rel="stylesheet" href="css/content.css">
-		<link rel="stylesheet" href="css/hover-window.css">
-		<script src="js/hover-window.js"></script>
-		<script src="js/scroll.js"></script>
+		<link rel="stylesheet" href="style/info.css">
+		<link rel="stylesheet" href="style/nav-bar.css">
+		<link rel="stylesheet" href="style/content.css">
+		<link rel="stylesheet" href="style/hover-window.css">
+		<link rel="stylesheet" href="style/background.css">
+		<script src="script/hover-window.js"></script>
+		<script src="script/scroll.js"></script>
 		<style>
 			* {
 				color: #00CCFF;
@@ -22,7 +23,7 @@
 			}
 			body {
 				margin: 5vw;
-				background-image: url(/res/SLIGHTNING/background.jpeg);
+				/* background-image: url(/res/SLIGHTNING/background.jpeg); */
 				background-size: contain;
 				background-position: center;
 				background-attachment: fixed;
@@ -44,12 +45,13 @@
 			}
 			#card:hover {
 				box-shadow: 0rem 0rem 2rem #888;
-				background-color: #000000C0;
+				background-color: #00000080;
 			}
 		</style>
 	</head>
 	<body>
 		<script src="js/set--background--image.js"></script>
+		<iframe id="background" src="https://clock.slightning.tk/" width="100%" height="100%" frameborder="0"></iframe>
 		<div id="card--around">
 			<div id="card">
 				<div id="info">
