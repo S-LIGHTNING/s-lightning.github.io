@@ -23,6 +23,7 @@
     transform: scale(0.5);
 }
 #hover-window--head {
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,16 +31,16 @@
 }
 #hover-window--close {
     width: 3rem;
-    cursor: pointer;
-    text-align: center;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     font-size: 3rem;
+    cursor: pointer;
 }
 #hover-window--close:hover {
-    background-color: #FF000080;
-    color: #FFF;
-}
-#hover-window--close::before {
-    content: "\f00d";
+    background-color: red;
+    color: white;
 }
 #hover-window--img {
     display: block;
