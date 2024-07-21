@@ -1,152 +1,156 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>SLIGHTNING 的主页</title>
-		<link rel="shortcut icon" href="res/icon.png">
-		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-		<link rel="stylesheet" href="style/info.css">
-		<link rel="stylesheet" href="style/nav-bar.css">
-		<link rel="stylesheet" href="style/content.css">
-		<link rel="stylesheet" href="style/hover-window.css">
-		<link rel="stylesheet" href="style/background.css">
-		<script src="script/hover-window.js"></script>
-		<script src="script/scroll.js"></script>
-		<style>
-			* {
-				transition: all 0.2s;
-				-webkit-tap-highlight-color: #00000000;
-			}
-			html, body {
-				scroll-behavior:smooth;
-			}
-			body, a {
-				color: #00C0FF;
-			}
-			body {
-				margin: 5vw;
-				/* background-image: url(/res/SLIGHTNING/background.jpeg); */
-				background-size: contain;
-				background-position: center;
-				background-attachment: fixed;
-				transition: background-image 0.2s;
-			}
-			a {
-				text-decoration: none;
-			}
-			#card--around {
-				margin: auto;
-				max-width: 64rem;
-			}
-			#card {
-				transition: all 0.6s;
-				min-height: calc(100vh - 10vw);
-			}
-			#card:hover {
-				box-shadow: 0rem 0rem 2rem #888;
-				background-color: #000000C0;
-			}
-		</style>
-	</head>
-	<body>
-		<script src="js/set--background--image.js"></script>
-		<iframe id="background" src="https://clock.tyser.bf/" width="100%" height="100%" frameborder="0"></iframe>
-		<div id="card--around">
-			<div id="card">
-				<div id="info">
-					<img id="avatar" src="res/SLIGHTNING/avatar.png" alt="头像">
-					<div id="name">
-						<img class="name" src="res/text/S.svg">
-						<img class="name" src="res/text/L.svg">
-						<img class="name" src="res/text/I.svg">
-						<img class="name" src="res/text/G.svg">
-						<img class="name" src="res/text/H.svg">
-						<img class="name" src="res/text/T.svg">
-						<img class="name" src="res/text/N.svg">
-						<img class="name" src="res/text/I.svg">
-						<img class="name" src="res/text/N.svg">
-						<img class="name" src="res/text/G.svg">
-					</div>
-				</div>
-				<div id="nav-bar">
-					<a class="nav-bar--item" onclick="scrollToEle('content--link')">
-						<i class="nav-bar--icon fa fa-chain"></i>
-						链接
-					</a>
-					<a class="nav-bar--item" onclick="scrollToEle('content--contact')">
-						<i class="nav-bar--icon fa fa-comments"></i>
-						联系
-					</a>
-					<a class="nav-bar--item" onclick="scrollToEle('content--friendly-link')">
-						<i class="nav-bar--icon fa fa-external-link"></i>
-						友链
-					</a>
-					<a class="nav-bar--item" onclick="scrollToEle('content--ad')">
-						<i class="nav-bar--icon fa fa-adn"></i>
-						广告
-					</a>
-				</div>
-				<div id="content">
-					<h2 id="content--link">链接</h2>
-					<a class="content--item" href="http://blog-slightning.tyser.bf/" target="_blank">
-						<i class="content--icon fa  fa-bold"></i>
-						<br>博客
-					</a>
-					<a class="content--item" href="https://github.com/S-L-I-G-H-T-N-I-N-G" target="_blank">
-						<i class="content--icon fa fa-github"></i>
-						<br>github
-					</a>
-					<a class="content--item" href="https://gitee.com/slightning" target="_blank">
-						<img src="https://gitee.com/favicon.ico" class="content--icon">
-						<br>gitee
-					</a>
-					<a class="content--item" href="https://shequ.codemao.cn/user/6519713" target="_blank">
-						<img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon">
-						<br>编程猫
-					</a>
-					<h2 id="content--contact">联系</h2>
-					<div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'res/SLIGHTNING/contact/mm.png')">
-						<i class="content--icon fa fa-wechat"></i>
-						<br>微信
-					</div>
-					<div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'res/SLIGHTNING/contact/qq.jpg')">
-						<i class="content--icon fa fa-qq"></i>
-						<br>QQ
-					</div>
-					<a class="content--item" href="https://blog-slightning.tyser.bf/messageboard/" target="_blank">
-						<i class="content--icon fa fa-paper-plane"></i>
-						<br>留言
-					</a>
-					<a class="content--item" href="mailto:3157420882@qq.com" target="_blank">
-						<i class="content--icon fa fa-envelope"></i>
-						<br>邮箱
-					</a>
-					<h2 id="content--friendly-link">友链</h2>
-					<a class="content--item" href="https://glacier.tyser.bf/" target="_blank">
-						<img src="https://glacier.tyser.bf/res/icon/icon.svg" class="content--icon">
-						<br>冰川工作室
-					</a>
-					<a class="content--item" href="https://dayanshifu.github.io/" target="_blank">
-						<img src="https://picst.sunbangyan.cn/2024/02/08/2a796f31c46f38c7cbe1528418626e52.jpeg" class="content--icon">
-						<br>是little颜鸭
-					</a>
-					<a class="content--item" href="https://hisuzume.github.io/" target="_blank">
-						<img src="https://hisuzume.github.io/suzume.png" class="content--icon">
-						<br>すずめ
-					</a>
-					<h2 id="content--ad">广告</h2>
-					<p>广告位招租，详情请联系我。</p>
-				</div>
-			</div>
-		</div>
-		<div id="hover-window--hover" class="hover-window--hover--hide">
-			<div id="hover-window" class="hover-window--hide">
-				<div id="hover-window--head">
-					<span id="hover-window--title"></span>
-					<span id="hover-window--close" onclick="closeHoverWindow()">×</span>
-				</div>
-				<img id="hover-window--img">
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SLIGHTNING 的主页</title>
+        <link rel="shortcut icon" href="res/icon.png">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="style/info.css">
+        <link rel="stylesheet" href="style/nav-bar.css">
+        <link rel="stylesheet" href="style/content.css">
+        <link rel="stylesheet" href="style/hover-window.css">
+        <link rel="stylesheet" href="style/background.css">
+        <script src="script/hover-window.js"></script>
+        <script src="script/scroll.js"></script>
+        <style>
+            * {
+                transition: all 0.2s;
+                -webkit-tap-highlight-color: #00000000;
+            }
+            html, body {
+                scroll-behavior:smooth;
+            }
+            body, a {
+                color: #00C0FF;
+            }
+            body {
+                margin: 5vw;
+                /* background-image: url(/res/SLIGHTNING/background.jpeg); */
+                background-size: contain;
+                background-position: center;
+                background-attachment: fixed;
+                transition: background-image 0.2s;
+            }
+            a {
+                text-decoration: none;
+            }
+            #card--around {
+                margin: auto;
+                max-width: 64rem;
+            }
+            #card {
+                transition: all 0.6s;
+                min-height: calc(100vh - 10vw);
+            }
+            #card:hover {
+                box-shadow: 0rem 0rem 2rem #888;
+                background-color: #000000C0;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="js/set--background--image.js"></script>
+        <iframe id="background" src="https://s-lightning.github.io/clock/" width="100%" height="100%" frameborder="0"></iframe>
+        <div id="card--around">
+            <div id="card">
+                <div id="info">
+                    <img id="avatar" src="res/SLIGHTNING/avatar.png" alt="头像">
+                    <div id="name">
+                        <img class="name" src="res/text/S.svg">
+                        <img class="name" src="res/text/L.svg">
+                        <img class="name" src="res/text/I.svg">
+                        <img class="name" src="res/text/G.svg">
+                        <img class="name" src="res/text/H.svg">
+                        <img class="name" src="res/text/T.svg">
+                        <img class="name" src="res/text/N.svg">
+                        <img class="name" src="res/text/I.svg">
+                        <img class="name" src="res/text/N.svg">
+                        <img class="name" src="res/text/G.svg">
+                    </div>
+                </div>
+                <div id="nav-bar">
+                    <a class="nav-bar--item" onclick="scrollToEle('content--link')">
+                        <i class="nav-bar--icon fa fa-chain"></i>
+                        链接
+                    </a>
+                    <a class="nav-bar--item" onclick="scrollToEle('content--contact')">
+                        <i class="nav-bar--icon fa fa-comments"></i>
+                        联系
+                    </a>
+                    <a class="nav-bar--item" onclick="scrollToEle('content--friendly-link')">
+                        <i class="nav-bar--icon fa fa-external-link"></i>
+                        友链
+                    </a>
+                    <a class="nav-bar--item" onclick="scrollToEle('content--ad')">
+                        <i class="nav-bar--icon fa fa-adn"></i>
+                        广告
+                    </a>
+                </div>
+                <div id="content">
+                    <h2 id="content--link">链接</h2>
+                    <a class="content--item" href="https://s-lightning.github.io/SLIGHTNING-Blog/" target="_blank">
+                        <i class="content--icon fa  fa-bold"></i>
+                        <br>博客
+                    </a>
+                    <a class="content--item" href="https://github.com/S-LIGHTNING" target="_blank">
+                        <i class="content--icon fa fa-github"></i>
+                        <br>github
+                    </a>
+                    <a class="content--item" href="https://gitee.com/slightning" target="_blank">
+                        <img src="https://gitee.com/favicon.ico" class="content--icon">
+                        <br>gitee
+                    </a>
+                    <a class="content--item" href="https://shequ.codemao.cn/user/6519713" target="_blank">
+                        <img src="https://static.codemao.cn/whitef/favicon.ico" class="content--icon">
+                        <br>编程猫
+                    </a>
+                    <h2 id="content--contact">联系</h2>
+                    <div class="content--item" onclick="showHoverWindow('扫二维码，加我微信', 'res/SLIGHTNING/contact/mm.png')">
+                        <i class="content--icon fa fa-wechat"></i>
+                        <br>微信
+                    </div>
+                    <div class="content--item" onclick="showHoverWindow('扫二维码，加我 QQ', 'res/SLIGHTNING/contact/qq.jpg')">
+                        <i class="content--icon fa fa-qq"></i>
+                        <br>QQ
+                    </div>
+                    <a class="content--item" href="https://s-lightning.github.io/SLIGHTNING-Blog/messageboard/" target="_blank">
+                        <i class="content--icon fa fa-paper-plane"></i>
+                        <br>留言
+                    </a>
+                    <a class="content--item" href="mailto:slightning@qq.com" target="_blank">
+                        <i class="content--icon fa fa-envelope"></i>
+                        <br>邮箱
+                    </a>
+                    <h2 id="content--friendly-link">友链</h2>
+                    <a class="content--item" href="https://glacier-studio.github.io/" target="_blank">
+                        <img src="https://glacier-studio.github.io/res/icon/icon.svg" class="content--icon">
+                        <br>冰川工作室
+                    </a>
+                    <a class="content--item" href="https://blog.mitsuha.run/" target="_blank">
+                        <img src="https://avatars.githubusercontent.com/u/164725925?v=4" class="content--icon">
+                        <br>Vistamin
+                    </a>
+                    <a class="content--item" href="https://dayanshifu.github.io/" target="_blank">
+                        <img src="https://picst.sunbangyan.cn/2024/02/08/2a796f31c46f38c7cbe1528418626e52.jpeg" class="content--icon">
+                        <br>是little颜鸭
+                    </a>
+                    <a class="content--item" href="https://hisuzume.github.io/" target="_blank">
+                        <img src="https://hisuzume.github.io/suzume.png" class="content--icon">
+                        <br>すずめ
+                    </a>
+                    <h2 id="content--ad">广告</h2>
+                    <p>广告位招租，详情请联系我。</p>
+                </div>
+            </div>
+        </div>
+        <div id="hover-window--hover" class="hover-window--hover--hide">
+            <div id="hover-window" class="hover-window--hide">
+                <div id="hover-window--head">
+                    <span id="hover-window--title"></span>
+                    <span id="hover-window--close" onclick="closeHoverWindow()">×</span>
+                </div>
+                <img id="hover-window--img">
+            </div>
+        </div>
+    </body>
 </html>
