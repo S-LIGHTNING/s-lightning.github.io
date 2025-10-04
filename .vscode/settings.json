@@ -1,3 +1,18 @@
 {
-    "commentTranslate.source": "DarkCWK.youdao-youdao"
+    "cSpell.words": [
+        "codemao",
+        "decompiler",
+        "gitee",
+        "nemo",
+        "slightning",
+        "vistamin",
+        "wechat"
+    ],
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "index.html": "index.*.html",
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*, webpack.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig"
+    }
 }

@@ -1,0 +1,36 @@
+:root {
+    --theme-color: #0080B4;
+    --background-color: #FFFFFFC0;
+    --background-strong-color: white;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-color: #00C0FF;
+        --background-color: #000000C0;
+        --background-strong-color: black;
+    }
+}
+* {
+    transition: all 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+html, body {
+    scroll-behavior:smooth;
+}
+body, a {
+    color: var(--theme-color);
+}
+body {
+    margin: 5vw;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 0.2s;
+}
+b, h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    -webkit-text-stroke-width: 1px;
+}
+a {
+    text-decoration: none;
+}
