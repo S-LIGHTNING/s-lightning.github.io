@@ -10,4 +10,4 @@ router.beforeEach((to): void => {
     }
 })
 
-createApp(App).use(router).mount("#app")
+createApp(App).use(router).mount("#root")
