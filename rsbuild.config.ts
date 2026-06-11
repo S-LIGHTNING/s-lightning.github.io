@@ -25,6 +25,7 @@ export default defineConfig({
             undefined
     },
     html: {
+        title: "SLIGHTNING",
         favicon: "./public/res/icon.png",
         tags: [
             {

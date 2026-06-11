@@ -6,6 +6,10 @@ export const rootPage = {
         {
             name: "项目",
             slagName: "projects"
+        },
+        {
+            name: "命令行版",
+            slagName: "cli"
         }
     ]
 }

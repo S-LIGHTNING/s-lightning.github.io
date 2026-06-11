@@ -6,25 +6,17 @@ defineProps<{
     title?: string
 }>()
 
-const showRef = defineModel<() => void>("show")
-
-const isShow = ref(false)
-
-function show() {
-    isShow.value = true
-}
-
-showRef.value = show
+const show = defineModel<boolean>("show")
 
 function close() {
-    isShow.value = false
+    show.value = false
 }
 
 </script>
 
 <template>
-    <div class="hover" :class="isShow ? null : `hover--hide`">
-        <div class="hover-window" :class="isShow ? null : `hide`">
+    <div class="hover" :class="show ? null : `hover--hide`">
+        <div class="hover-window" :class="show ? null : `hide`">
             <div class="head">
                 <span class="title">{{ title }}</span>
                 <i class="close fa fa-close" @click="close"></i>

@@ -69,6 +69,8 @@ watchEffect((): void => {
     margin-bottom: 4px;
 }
 .card {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     padding: 8px;
     max-width: 64rem;

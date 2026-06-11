@@ -12,6 +12,10 @@ export const router = createRouter({
             component: (): RouteComponent => import("@/pages/projects/index.vue"),
             meta: { title: "项目 | SLIGHTNING" }
         }, {
+            path: "/cli/",
+            component: (): RouteComponent => import("@/pages/cli/index.vue"),
+            meta: { title: "命令行 | SLIGHTNING", keepAlive: true }
+        }, {
             path: "/:catchAll(.*)",
             component: (): RouteComponent => import("@/pages/page-index/index.vue")
         }
