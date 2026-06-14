@@ -1,19 +1,17 @@
 <script setup lang="ts">
 
+import Icon from "@/components/Icon.vue"
+import type { ContentAreaRecord } from "@/data/content"
 import { getHeightToTop } from "@/utils/get-height-to-top"
 
 const props = defineProps<{
     marginTop?: number
-} & NavBarItemData>()
-
-export interface NavBarItemData {
-    title: string
-    icon?: string | null | undefined
-    target?: Element | null | undefined
-}
+    data: ContentAreaRecord
+}>()
 
 function scrollToElement() {
-    const top = getHeightToTop(props.target)
+    const element = document.getElementById(`content-${props.data.key}`)
+    const top = getHeightToTop(element)
     document.documentElement.scrollTop = top - (props.marginTop ?? 0)
 }
 
@@ -21,8 +19,8 @@ function scrollToElement() {
 
 <template>
     <a class="item" @click=scrollToElement>
-        <i class="icon fa" :class="icon ?? `fa-chain`"></i>
-        <div>{{ title }}</div>
+        <div class="icon"><Icon :src="data.icon" /></div>
+        <div>{{ data.title }}</div>
     </a>
 </template>
 

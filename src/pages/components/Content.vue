@@ -1,10 +1,13 @@
 <script setup lang="ts">
 
+import { CONTENT } from "@/data/content"
 import { useBoundingClientTop } from "@/utils/use-bounding-client-top"
 import { ref, watchEffect } from "vue"
+import ContentArea from "./ContentArea.vue"
 
 const props = defineProps<{
-    maskTop?: number | null | undefined
+    maskTop?: number
+    data: typeof CONTENT
 }>()
 
 const element = ref<HTMLElement>()
@@ -23,7 +26,7 @@ watchEffect(setMask)
 
 <template>
     <div ref="element" class="content">
-        <slot />
+        <ContentArea v-for="area in data" :data="area"/>
     </div>
 </template>
 

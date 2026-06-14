@@ -10,11 +10,11 @@ import { SerializeAddon } from "@xterm/addon-serialize"
 import { Emulator, EmulatorState, CommandMapping, defaultCommandMapping, OutputFactory, FileSystem, DirOp, FileOp, EnvironmentVariables, OptionParser } from "javascript-terminal"
 import chalk from "chalk"
 
-import { CONTENT, ContentImageItem, ContentImageLine, ContentItemGroup, ContentLineGroup, ContentLinkItem, ContentTextLine } from "@/data/content"
+import { CONTENT, ContentImageItemRecord, ContentImageLineRecord, ContentItemGroupRecord, ContentLineGroupRecord, ContentLinkItemRecord, ContentTextLineRecord } from "@/data/content"
 import { usePrefersColorScheme } from "@/utils/use-prefers-color-scheme"
 import { router } from "@/app/router"
 
-const URL_REGEX = /((https?|HTTPS?):[/]{2}|\/)[^\s"'!*(){}|\\\^<>`]*[^\s"':,.!?{}|\\\^~\[\]`()<>]/
+const URL_REGEX = /((https?|HTTPS?):[/]{2}|\/)[^\s"'!*(){}|\\\^<>`]*[^\s"':,.!?{}|\\\^~\[\]`()<>]/g
 
 const COMMAND_MAPPING = CommandMapping.create({
     ...defaultCommandMapping,
@@ -45,20 +45,21 @@ const COMMAND_MAPPING = CommandMapping.create({
             if (err) {
                 return { output: OutputFactory.makeErrorOutput(err) }
             }
-            console.log(666)
-            const link = file.get("content").match(URL_REGEX)?.[0]
-            if (link === undefined) {
+            const links = file.get("content").match(URL_REGEX)
+            if (links === null) {
                 return { output: OutputFactory.makeErrorOutput({ source: "open", type: "该文件中没有链接" }) }
             }
-            if (link.startsWith("https:")) {
-                open(link, "_blank")
-            } else if (link.split("/").pop()?.includes(".")) {
-                const url = new URL(link, location.href)
-                open(url, undefined, "popup,width=400,height=600")
-            } else if (link.startsWith("/")) {
-                router.push(link)
-            } else {
-                open(link, "_blank")
+            for (const link of links) {
+                if (link.split("/").pop()?.includes(".")) {
+                    open(link, "_blank")
+                } else if (link.startsWith("https:")) {
+                    const url = new URL(link, location.href)
+                    open(url, undefined, "popup,width=400,height=600")
+                } else if (link.startsWith("/")) {
+                    router.push(link)
+                } else {
+                    open(link, "_blank")
+                }
             }
             return { output: OutputFactory.makeTextOutput("打开链接：" + link) }
         },
@@ -173,10 +174,11 @@ const COMMAND_MAPPING = CommandMapping.create({
     },
     exit: {
         function(state, opts) {
-            if (history.length <= 1) {
+            const lastRoute = router.currentRoute
+            router.back()
+            if (lastRoute === router.currentRoute) {
                 close()
             }
-            history.back()
             return { output: OutputFactory.makeTextOutput("正在退出……") }
         },
         optDef: {}
@@ -241,26 +243,26 @@ const FILE_SYSTEM = FileSystem.create((() => {
     const files: Record<string, unknown> = {}
     for (const area of CONTENT) {
         const { group } = area
-        if (group instanceof ContentItemGroup) {
+        if (group instanceof ContentItemGroupRecord) {
             for (const content of group.contents) {
-                if (content instanceof ContentLinkItem) {
+                if (content instanceof ContentLinkItemRecord) {
                     files[`${ROOT}/${area.key}/${content.key}`] = {
-                        content: `${content.title} ${content.link}`,
+                        content: `${content.name} ${content.link}`,
                         canModify: false
                     }
-                } else if (content instanceof ContentImageItem) {
+                } else if (content instanceof ContentImageItemRecord) {
                     files[`${ROOT}/${area.key}/${content.key}`] = {
-                        content: `${content.title} ${content.src} ${content.alt ?? ""}`,
+                        content: `${content.name} ${content.title} ${content.src} ${content.alt ?? ""}`,
                         canModify: false
                     }
                 }
             }
-        } else if (group instanceof ContentLineGroup) {
+        } else if (group instanceof ContentLineGroupRecord) {
             let lines: string[] = []
             for (const line of group.lines) {
-                if (line instanceof ContentTextLine) {
+                if (line instanceof ContentTextLineRecord) {
                     lines.push(line.text)
-                } else if (line instanceof ContentImageLine) {
+                } else if (line instanceof ContentImageLineRecord) {
                     lines.push(line.alt === undefined ? line.src : line.alt + " " + line.src)
                 }
             }
@@ -347,6 +349,7 @@ terminal.loadAddon(serializeAddon)
             }
             terminal.writeln(processedContent)
         }
+        saveState()
     }
 })()
 

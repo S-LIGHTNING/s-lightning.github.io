@@ -1,31 +1,14 @@
 <script setup lang="ts">
 
-import { ref, watchEffect, type ComponentInstance, type Ref } from "vue"
-import type Content from "./Content.vue"
-import NavBarItem, { type NavBarItemData } from "./NavBarItem.vue"
+import { ref, watchEffect } from "vue"
+import NavBarItem from "./NavBarItem.vue"
 import { useDocumentScrollRate } from "@/utils/use-document-scroll-rate"
+import type { ContentAreaRecord } from "@/data/content.ts"
 
 const props = defineProps<{
-    content?: ComponentInstance<typeof Content> | undefined
     marginTop?: number
+    data: ContentAreaRecord[]
 }>()
-
-const items = ref<NavBarItemData[]>([])
-
-watchEffect((): void => {
-    const element = props.content?.$el as HTMLElement | undefined
-    if (element == undefined) {
-        return
-    }
-    items.value = []
-    for (const contentElement of element.querySelectorAll(".content-group")) {
-        items.value.push({
-            title: contentElement.getAttribute("data-title") ?? "",
-            icon: contentElement.getAttribute("data-icon"),
-            target: contentElement
-        })
-    }
-})
 
 const navBarElement = ref<HTMLElement | undefined>()
 const documentScrollRate = useDocumentScrollRate()
@@ -41,7 +24,7 @@ watchEffect(() => {
 
 <template>
     <nav ref="navBarElement" class="nav-bar">
-        <NavBarItem v-for="item in items" ...=item :marginTop />
+        <NavBarItem v-for="item in data" :data="item" :marginTop />
     </nav>
 </template>
 
